@@ -71,7 +71,7 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">Domů</NavLink>
             <NavLink to="/components/">Components</NavLink>
             <div
               className={`Nav--Group ${
@@ -110,7 +110,7 @@ export class Navigation extends Component {
               </span>
             </div>
             <NavLink to="/default/">Default</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            <NavLink to="/contact/">Kontakt</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

@@ -1,19 +1,20 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
+title: Břízův sbor kameničky
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+subtitle: ' Vítejte na stránkách Břízova chrámového sboru z Kameniček.'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
 ---
+# O nás
 
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightning fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
+Břízův chrámový sbor, který v současné době čítá 25 členů, vznikl zásluhou P. Karla Břízy před třiceti lety. Karel Bříza (1926–2001), kněz - redemptorista, varhaník a skladatel duchovní hudby položil svou trpělivou a obětavou prací základ, z něhož sbor čerpá dodnes. Členové sboru jsou nejen z Kameniček, ale i z okolních farností – z Herálce, Rané, Skutče a Svratky. Mimořádně krásným zážitkem pro nás všechny bylo vystupování s Prof. Radovanem Lukavským v pásmu Popelky nazaretské. Protože jsme se s Vámi chtěli podělit o tento zážitek, vznikla díky morální a finanční podpoře mnoha dobrých lidí nahrávka Popelka Nazaretská. CD si u nás můžete objednat za symbolickou cenu emailem. Doufáme, že i Vám přinese pohlazení na duši i radost z poslechu hudby a poezie. Jen jedno je třeba dodat: _„Ne nám, Pane, ne nám, ale svému jménu dej slávu. Cokoliv jsme vykonali, učinil jsi spíše Ty skrze nás...“_ (text písně P. Jiřího Šlégra)
 
 View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
 
-# Features
+
 
 - **[Gatsby](https://gatsbyjs.org)** static site generator
 - **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
