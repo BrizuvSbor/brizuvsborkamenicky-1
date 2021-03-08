@@ -13,13 +13,17 @@
 }
 
 .PageHeader--Title {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 0;
+  color: #ffffffd4;
+  font-family: "Poppins";
+  text-shadow: "2px 2px 3px rgb(33 33 33 / 50%)";
 }
 
 .PageHeader--Subtitle {
   font-weight: 400;
   font-size: 1.8rem;
+  font-family: "Poppins";
 }
 
 .PageHeader .container {
