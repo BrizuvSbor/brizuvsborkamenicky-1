@@ -17,7 +17,7 @@ media_library:
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
-    label: 'Page'
+    label: 'Stránka'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: true
@@ -33,7 +33,6 @@ collections: # A list of collections the CMS should be able to edit
               default: ContactPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: 'contact' }
-          - { label: Titulek, name: title, widget: string }
           - { label: Obsah, name: body, widget: markdown }
           - { label: Vedoucí sboru, name: boss, widget: text }
           - { label: Telefon, name: phone, widget: string }
@@ -54,13 +53,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Obrázek v hlavičce, name: featuredImage, widget: image }
           - { label: Podtitulek, name: subtitle, widget: markdown, required: false }
           - { label: Obsah, name: body, widget: markdown }
-          - label: 'Accordion'
-            name: 'accordion'
-            widget: 'list'
-            required: false
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: Content, name: content, widget: text }
 
       - file: 'content/pages/concerts.md'
         label: 'Koncerty'
@@ -83,6 +75,25 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Název koncertu', name: 'title', widget: 'string' }
               - { label: 'Popis koncertu', name: 'description', widget: 'string' }
 
+      - file: 'content/pages/records.md'
+        label: 'Záznamy z koncertů'
+        name: 'records-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: RecordsPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'contact' }
+          - { label: Titulek, name: title, widget: string }
+          - label: 'Odkazy na youtube'
+            name: 'links'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Odkaz', name: 'link', widget: 'string' }
+  
   - name: posts
     label: Naše fotky
     editor:

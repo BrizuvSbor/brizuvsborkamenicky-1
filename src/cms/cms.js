@@ -5,9 +5,9 @@ import './cms-utils'
 import { HomePageTemplate } from '../templates/HomePage'
 import { ComponentsPageTemplate } from '../templates/ComponentsPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
-import { DefaultPageTemplate } from '../templates/DefaultPage'
-import { BlogIndexTemplate } from '../templates/BlogIndex'
 import { SinglePostTemplate } from '../templates/SinglePost'
+import { ConcertsPageTemplate } from '../templates/ConcertsPage'
+import { RecordsPageTemplate } from '../templates/RecordsPage'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 
 CMS.registerMediaLibrary(uploadcare)
@@ -32,12 +32,12 @@ CMS.registerPreviewTemplate('components-page', ({ entry }) => (
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
-  <DefaultPageTemplate {...entry.toJS().data} />
-))
-CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-  <BlogIndexTemplate {...entry.toJS().data} />
-))
 CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('concerts-page', ({ entry }) => (
+  <ConcertsPageTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('records-page', ({ entry }) => (
+  <RecordsPageTemplate {...entry.toJS().data} />
 ))
