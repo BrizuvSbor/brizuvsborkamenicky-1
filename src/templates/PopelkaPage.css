@@ -1,0 +1,41 @@
+.PopelkaPage {
+}
+
+@media (min-width: 850px) {
+  .PopelkaPage--Section--Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .PopelkaPage--Section--Container > * {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 850px) {
+  .PopelkaPage--Records {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .PopelkaPage--Records > .PopelkaPage--Label {
+    width: calc(59% - 1rem);
+    line-height: 54px;
+    font-weight: bold;
+  }
+
+  .PopelkaPage--Records > .PopelkaPage--Audio {
+    width: calc(39% - 1rem);
+  }
+
+  .PopelkaPage--Records > .PopelkaPage--Audio > audio {
+    width: -webkit-fill-available;
+  }
+}
+
+
+
+
+

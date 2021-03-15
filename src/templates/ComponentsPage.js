@@ -52,6 +52,12 @@ export const ComponentsPageTemplate = ({
       <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
+      <div class="fb-video"
+  data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553"
+  data-width="500"
+  data-allowfullscreen="true"
+  data-autoplay="true"
+  data-show-captions="true"></div>
     </section>
 
     <section className="section">
@@ -85,7 +91,6 @@ export const pageQuery = graphql`
   query ComponentsPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
-      ...Gallery
       html
       frontmatter {
         title

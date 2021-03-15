@@ -60,19 +60,10 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <Link
-            to="/"
-            onClick={this.handleLinkClick}
-            onKeyDown={this.handleLinkKeyDown}
-            tabIndex={0}
-            aria-label="Navigation"
-            role="button"
-          >
-            <Logo />
-          </Link>
           <div className="Nav--Links">
             <NavLink to="/">Domů</NavLink>
-            <NavLink to="/components/">Components</NavLink>
+            <NavLink to="/koncerty/">Koncerty</NavLink>
+            <NavLink to="/nase-fotky/">Naše fotky</NavLink>
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
@@ -92,24 +83,19 @@ export class Navigation extends Component {
                 aria-label="Navigation"
                 role="button"
               >
-                Blog
+                Naše produkce
                 <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
+                  <NavLink to="/popelka-nazaretska/" className="Nav--GroupLink">
+                    Popelka Nazaretská
                   </NavLink>
-                  {subNav.posts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
+                  <NavLink to="/zaznamy/" className="Nav--GroupLink">
+                    Záznamy koncertů
+                  </NavLink>
                 </div>
               </span>
             </div>
-            <NavLink to="/default/">Default</NavLink>
+            <NavLink to="/radovan-lukavsky/">Radovan Lukavský</NavLink>
+            <NavLink to="/vaclav-renc/">Václav Renč</NavLink>
             <NavLink to="/contact/">Kontakt</NavLink>
           </div>
           <button

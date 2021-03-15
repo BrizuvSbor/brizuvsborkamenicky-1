@@ -3,16 +3,10 @@ import './Footer.css'
 
 export default () => (
   <div>
-    <h2 className="taCenter">
-      Follow us{' '}
-      <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>
-    </h2>
-    <br />
     <footer className="footer">
-      <div className="container taCenter">
+      <div className="container taCenter justify-content-center">
         <span>
-          © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          <a href="https://thriveweb.com.au/">Thrive</a>.
+          © {new Date().getFullYear()} Břízův sbor Kameničky
         </span>
       </div>
     </footer>

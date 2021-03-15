@@ -1,0 +1,51 @@
+.RecordsPage {
+}
+
+.RecordsPage--Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.RecordsPage--Grid > * {
+  width: calc(50% - 1rem);
+  margin-bottom: 4rem;
+}
+
+@supports (display: grid) {
+  .RecordsPage--Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+
+  .RecordsPage--Grid > * {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.RecordsPage--Title {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 888px) {
+  .RecordsPage--Grid > * {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto 4rem;
+    display: block;
+  }
+
+  @supports (display: grid) {
+    .RecordsPage--Grid {
+      display: block;
+      grid-template-columns: 1;
+      grid-gap: 0;
+    }
+  }
+}

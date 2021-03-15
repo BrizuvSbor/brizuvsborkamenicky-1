@@ -37,10 +37,7 @@ export const byCategory = (posts, title, contentType) => {
 // Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
   title,
-  subtitle,
-  featuredImage,
   posts = [],
-  postCategories = [],
   enableSearch = true,
   contentType
 }) => (
@@ -63,20 +60,6 @@ export const BlogIndexTemplate = ({
 
       return (
         <main className="Blog">
-          <PageHeader
-            title={title}
-            subtitle={subtitle}
-            backgroundImage={featuredImage}
-          />
-
-          {!!postCategories.length && (
-            <section className="section thin">
-              <div className="container">
-                <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
-            </section>
-          )}
-
           {!!posts.length && (
             <section className="section">
               <div className="container">
@@ -149,9 +132,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
-            categories {
-              category
-            }
             featuredImage
           }
         }
