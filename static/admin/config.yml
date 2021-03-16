@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: hidden,
               default: ContactPage,
             }
-          - { label: Slug, name: slug, widget: hidden, default: 'contact' }
+          - { label: Slug, name: slug, widget: hidden, default: 'kontakt' }
           - { label: Obsah, name: body, widget: markdown }
           - { label: Vedoucí sboru, name: boss, widget: text }
           - { label: Telefon, name: phone, widget: string }
@@ -64,7 +64,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: hidden,
               default: ConcertsPage,
             }
-          - { label: Slug, name: slug, widget: hidden, default: 'contact' }
+          - { label: Slug, name: slug, widget: hidden, default: 'concerts' }
           - { label: Titulek, name: title, widget: string }
           - { label: Obrázek v hlavičce, name: featuredImage, widget: image }
           - label: 'Koncerty'
@@ -85,7 +85,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: hidden,
               default: RecordsPage,
             }
-          - { label: Slug, name: slug, widget: hidden, default: 'contact' }
+          - { label: Slug, name: slug, widget: hidden, default: 'records' }
           - { label: Titulek, name: title, widget: string }
           - label: 'Odkazy na youtube'
             name: 'links'

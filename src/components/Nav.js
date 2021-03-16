@@ -96,7 +96,7 @@ export class Navigation extends Component {
             </div>
             <NavLink to="/radovan-lukavsky/">Radovan Lukavský</NavLink>
             <NavLink to="/vaclav-renc/">Václav Renč</NavLink>
-            <NavLink to="/contact/">Kontakt</NavLink>
+            <NavLink to="/kontakt/">Kontakt</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
