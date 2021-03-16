@@ -7,7 +7,7 @@ backend:
 media_library:
   name: uploadcare
   config:
-    publicKey: a73a170cb5cdef662983
+    publicKey: b89e48733a3d7a8dabdd
     multiple: false
     tabs: 'file camera url facebook gdrive'
     effects: 'crop,rotate,enhance,grayscale'
@@ -67,13 +67,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Slug, name: slug, widget: hidden, default: 'concerts' }
           - { label: Titulek, name: title, widget: string }
           - { label: Obrázek v hlavičce, name: featuredImage, widget: image }
-          - label: 'Koncerty'
+          - label: 'Koncert'
             name: 'concerts'
             widget: 'list'
             required: false
             fields:
               - { label: 'Název koncertu', name: 'title', widget: 'string' }
-              - { label: 'Popis koncertu', name: 'description', widget: 'string' }
+              - { label: 'Popis koncertu', name: 'description', widget: 'string', required: false }
 
       - file: 'content/pages/records.md'
         label: 'Záznamy z koncertů'
@@ -87,7 +87,7 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'records' }
           - { label: Titulek, name: title, widget: string }
-          - label: 'Odkazy na youtube'
+          - label: 'Odkaz na youtube'
             name: 'links'
             widget: 'list'
             required: false
@@ -105,15 +105,15 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Titulek, name: title, widget: string }
       - { label: Datum / Pořadí, name: date, widget: date, format: 'YYYY-MM-DD' }
-      - { label: Náhled textu na kartě, name: excerpt, widget: text }
-      - { label: Obsah, name: body, widget: markdown }
+      - { label: Náhled textu na kartě, name: excerpt, widget: text, required: false }
+      - { label: Obsah, name: body, widget: markdown, required: false }
       - label: "Galerie"
         name: "images"
         widget: "list"
         summary: '{{fields.image}}'
         fields:
           - {
-              label: Obrázky, 
+              label: Obrázek/Obrázky, 
               name: gallery,
               widget: image,
               media_library: { 

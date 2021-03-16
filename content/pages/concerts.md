@@ -11,10 +11,8 @@ concerts:
     description: 
   - title: 28. 7. 2019 - Pouť na Rané
     description: Taciti lorem tempor quam vestibulum dis habitasse
-  - title: Taciti lorem
-    description: Taciti lorem tempor quam vestibulum dis habitasse
 meta:
-  description: This is a meta description.
+  description: Navštivte naše koncerty.
   title: Koncerty
 ---
 Navštivte naše koncerty!
