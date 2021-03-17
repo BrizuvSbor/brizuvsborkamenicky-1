@@ -9,10 +9,10 @@ import { SinglePostTemplate } from '../templates/SinglePost'
 import { ConcertsPageTemplate } from '../templates/ConcertsPage'
 import { RecordsPageTemplate } from '../templates/RecordsPage'
 // import uploadcare from 'netlify-cms-media-library-uploadcare'
-import cloudinary from 'netlify-cms-media-library-cloudinary'
+import cloudinary from 'netlify-cms-media-library-cloudinary';
 
 // CMS.registerMediaLibrary(uploadcare)
-CMS.registerMediaLibrary(cloudinary)
+CMS.registerMediaLibrary(cloudinary);
 
 if (
   window.location.hostname === 'localhost' &&

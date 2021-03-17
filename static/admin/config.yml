@@ -10,6 +10,12 @@ media_library:
     cloud_name: dfhtw7uzk
     api_key: 841185415291831
     multiple: false
+    default_transformations:
+      - fetch_format: auto
+        width: 2000
+        height: 2000    
+        quality: auto
+        crop: crop
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
