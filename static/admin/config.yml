@@ -5,15 +5,11 @@ backend:
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
-  name: uploadcare
+  name: cloudinary
   config:
-    publicKey: b89e48733a3d7a8dabdd
+    cloud_name: dfhtw7uzk
+    api_key: 841185415291831
     multiple: false
-    tabs: 'file camera url facebook gdrive'
-    effects: 'crop,rotate,enhance,grayscale'
-    imageShrink: '2000x2000'
-    previewStep: true
-    clearable: true
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
@@ -118,8 +114,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: image,
               media_library: { 
                 config: {
-                  multiple: true,
-                  previewStep: false
+                  multiple: true
                 } 
               }
           }

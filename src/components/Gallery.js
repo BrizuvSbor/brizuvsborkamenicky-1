@@ -29,8 +29,7 @@ export default class Gallery extends Component {
   }
 
   getImageInfo = (img, index) =>
-    fetch(img + '-/json/')
-      .then(res => res.json())
+    fetch(img)
       .then(
         result => {
           const newImagesArr = [...this.state.sliderImages]

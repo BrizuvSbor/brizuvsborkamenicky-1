@@ -8,9 +8,11 @@ import { ContactPageTemplate } from '../templates/ContactPage'
 import { SinglePostTemplate } from '../templates/SinglePost'
 import { ConcertsPageTemplate } from '../templates/ConcertsPage'
 import { RecordsPageTemplate } from '../templates/RecordsPage'
-import uploadcare from 'netlify-cms-media-library-uploadcare'
+// import uploadcare from 'netlify-cms-media-library-uploadcare'
+import cloudinary from 'netlify-cms-media-library-cloudinary'
 
-CMS.registerMediaLibrary(uploadcare)
+// CMS.registerMediaLibrary(uploadcare)
+CMS.registerMediaLibrary(cloudinary)
 
 if (
   window.location.hostname === 'localhost' &&
