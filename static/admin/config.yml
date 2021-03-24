@@ -120,9 +120,10 @@ collections: # A list of collections the CMS should be able to edit
               name: gallery,
               widget: image,
               media_library: {
-                tags: ['tagTest'], 
+                
                 config: {
-                  multiple: true
+                  multiple: true,
+                  tags: ['tagTest']
                 } 
               }
           }
