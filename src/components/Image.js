@@ -83,25 +83,21 @@ class Image extends React.Component {
         return `${src}-/progressive/yes/-/format/auto/-/preview/${size}x${size}/-/quality/lightest/${size}.jpg ${size}w`
       })
     };*/
-    let urlArray = src.split("/upload");
-    let configArray = urlArray[1].split("/");
+    fullSrc = src;
+    smallSrc = src;
+
     if (isCloudinary) {
+      let urlArray = src.split("/upload");
+      let configArray = urlArray[1].split("/");
       secSet = this.imageSizes.map(size => {
         let newConfigParams = `c_fill,f_auto,q_auto,h_${size},w_${size}`;
         return this.getResultUrl(urlArray, configArray, newConfigParams) + " " + size + "w";
-      })
+      });
+      let newConfigParams = `c_fill,f_auto,q_auto,w_${this.getResolutionString(resolutions)}`;
+      fullSrc = this.getResultUrl(urlArray, configArray, newConfigParams);
+      newConfigParams = `c_fill,f_auto,q_auto,w_10`;
+      smallSrc = this.getResultUrl(urlArray, configArray, newConfigParams);
     }
-
-    let newConfigParams = `c_fill,f_auto,q_auto,w_${this.getResolutionString(resolutions)}`;
-    fullSrc = `${
-      isCloudinary
-        ? this.getResultUrl(urlArray, configArray, newConfigParams)
-        : src
-    }`
-    newConfigParams = `c_fill,f_auto,q_auto,w_10`;
-    smallSrc = `${
-      isCloudinary ? this.getResultUrl(urlArray, configArray, newConfigParams) : src
-    }`
 
     let style = {}
     if (background && lazy) {
