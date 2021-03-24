@@ -119,8 +119,8 @@ collections: # A list of collections the CMS should be able to edit
               label: Obrázek/Obrázky, 
               name: gallery,
               widget: image,
-              tagname: {{slug}},
-              media_library: { 
+              media_library: {
+                tags: ['tagTest'], 
                 config: {
                   multiple: true
                 } 
