@@ -3,11 +3,12 @@ excerpt: ""
 meta:
   description: test meta description
   title: test meta title
-featuredImage: https://ucarecdn.com/bd5d1edc-73be-488a-9d50-8ec28f5ab6a9/
+featuredImage: https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_2000,q_auto,w_2000/v1616447070/popelka_koncert/vkoncert0019_ydskxe.jpg
 template: SinglePost
 date: 2018-05-25
 status: Published
 title: Man
+tag: popelka
 images:
   - gallery:
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_2000,q_auto,w_2000/v1616447070/popelka_koncert/vkoncert0019_ydskxe.jpg

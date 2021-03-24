@@ -13,7 +13,8 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  images = []
+  images = [],
+  tag
 }) => (
   <main>
     <section className="container">
@@ -31,7 +32,7 @@ export const SinglePostTemplate = ({
           <Content source={body} />
         </div>
           {images && (
-            <Gallery images={images.flatMap(img => img.gallery)} />
+            <Gallery tag={tag} images={images.flatMap(img => img.gallery)} />
           )}
         </div>
         <div className="SinglePost--Pagination">
@@ -90,6 +91,7 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
+        tag
         template
         subtitle
         date(formatString: "MMMM Do, YYYY")

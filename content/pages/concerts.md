@@ -2,7 +2,7 @@
 template: ConcertsPage
 slug: koncerty
 title: KONCERTY
-featuredImage: 'https://ucarecdn.com/a856d38e-9d42-4ba6-bd3d-f649cf3b49ec/'
+featuredImage: 'https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_2000,q_auto,w_2000/v1616447070/popelka_koncert/vkoncert0019_ydskxe.jpg'
 subtitle: 
 concerts:
   - title: 21. 4. 2019 - Boží hod velikonoční

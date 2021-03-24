@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import Observer from './Observer'
 
 import './Image.css'
+import { result } from 'lodash'
 
 class Image extends React.Component {
-  constructor(props) {
-    super(props)
-    this.ref = React.createRef()
+  constructor() {
+    super()
+    this.ref = React.createRef();
   }
 
   imageSizes = [
@@ -38,23 +39,31 @@ class Image extends React.Component {
     return typeof src === 'string' && src.includes('ucarecdn.com')
   }
 
+  checkIsCloudinary(src) {
+    return typeof src === 'string' && src.includes('cloudinary')
+  }
+
   getResolutionString(res) {
     /* add resolutions options for inline images */
     if (res === 'small') {
-      res = '800x'
+      res = '800'
     } else if (res === 'medium') {
-      res = '1000x'
+      res = '1000'
     } else if (res === 'large') {
-      res = '2000x'
+      res = '2000'
     }
     return res
+  }
+
+  getResultUrl(urlArray, configArray, newConfigParams) {
+    return urlArray[0] + "/upload/" + newConfigParams + "/" + configArray.slice(2, configArray.length).join("/").toString();
   }
 
   render() {
     let {
       background,
       backgroundSize = 'cover',
-      resolutions = '1000x',
+      resolutions = '1000',
       className = '',
       src,
       secSet = '',
@@ -65,25 +74,33 @@ class Image extends React.Component {
       lazy = true
     } = this.props
 
-    const isUploadcare = this.checkIsUploadcare(src),
-      fullImage = !isUploadcare || !lazy
+    const isCloudinary = this.checkIsCloudinary(src),
+      fullImage = !isCloudinary || !lazy
 
     /* create source set for images */
-    if (isUploadcare) {
+   /* if (isUploadcare) {
       secSet = this.imageSizes.map(size => {
         return `${src}-/progressive/yes/-/format/auto/-/preview/${size}x${size}/-/quality/lightest/${size}.jpg ${size}w`
       })
+    };*/
+    let urlArray = src.split("/upload");
+    let configArray = urlArray[1].split("/");
+    if (isCloudinary) {
+      secSet = this.imageSizes.map(size => {
+        let newConfigParams = `c_fill,f_auto,q_auto,h_${size},w_${size}`;
+        return this.getResultUrl(urlArray, configArray, newConfigParams) + " " + size + "w";
+      })
     }
 
-    fullSrc = `${src}${
-      isUploadcare
-        ? '-/progressive/yes/-/format/auto/-/resize/' +
-          this.getResolutionString(resolutions) +
-          '/'
-        : ''
+    let newConfigParams = `c_fill,f_auto,q_auto,w_${this.getResolutionString(resolutions)}`;
+    fullSrc = `${
+      isCloudinary
+        ? this.getResultUrl(urlArray, configArray, newConfigParams)
+        : src
     }`
-    smallSrc = `${src}${
-      isUploadcare ? '-/progressive/yes/-/format/auto/-/resize/10x/' : ''
+    newConfigParams = `c_fill,f_auto,q_auto,w_10`;
+    smallSrc = `${
+      isCloudinary ? this.getResultUrl(urlArray, configArray, newConfigParams) : src
     }`
 
     let style = {}
@@ -103,7 +120,7 @@ class Image extends React.Component {
 
     return (
       <Fragment>
-        {isUploadcare && lazy && (
+        {isCloudinary && lazy && (
           <Observer onChange={this.handleIntersection}>
             <div
               className="BackgroundImage"

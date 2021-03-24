@@ -106,6 +106,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Titulek, name: title, widget: string }
+      - { label: Tag, name: tag, widget: hidden, default: {{slug}}}
       - { label: Datum / Pořadí, name: date, widget: date, format: 'YYYY-MM-DD' }
       - { label: Náhled textu na kartě, name: excerpt, widget: text, required: false }
       - { label: Obsah, name: body, widget: markdown, required: false }
@@ -119,6 +120,7 @@ collections: # A list of collections the CMS should be able to edit
               name: gallery,
               widget: image,
               media_library: { 
+                tagname: {{slug}},
                 config: {
                   multiple: true
                 } 
