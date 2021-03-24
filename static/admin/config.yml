@@ -16,7 +16,6 @@ media_library:
         height: 2000    
         quality: auto
         crop: crop
-        $tag: 'tag'
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
@@ -121,9 +120,11 @@ collections: # A list of collections the CMS should be able to edit
               name: gallery,
               widget: image,
               media_library: {
-                
                 config: {
-                  multiple: true
+                  multiple: true,
+                  default_transformations: {
+                    $tag: {{slug}}
+                  }
                 } 
               }
           }
