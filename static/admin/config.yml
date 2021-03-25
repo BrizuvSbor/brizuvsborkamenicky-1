@@ -122,6 +122,9 @@ collections: # A list of collections the CMS should be able to edit
               media_library: {
                 config: {
                   multiple: true,
+                  asset: {
+                    tags: ['tag']
+                  },
                   default_transformations: {
                     $tag: {{slug}}
                   }
