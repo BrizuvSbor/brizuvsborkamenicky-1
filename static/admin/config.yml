@@ -10,6 +10,7 @@ media_library:
     cloud_name: dfhtw7uzk
     api_key: 841185415291831
     multiple: false
+    tags: ['tag']
     default_transformations:
       - fetch_format: auto
         width: 2000
@@ -107,6 +108,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Titulek, name: title, widget: string }
       - { label: Tag, name: tag, widget: hidden, default: {{slug}}}
+      - { label: Úvdní obrázek na kartě, name: featuredImage, widget: image }
       - { label: Datum / Pořadí, name: date, widget: date, format: 'YYYY-MM-DD' }
       - { label: Náhled textu na kartě, name: excerpt, widget: text, required: false }
       - { label: Obsah, name: body, widget: markdown, required: false }
@@ -121,13 +123,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: image,
               media_library: {
                 config: {
-                  multiple: true,
-                  asset: {
-                    tags: ['tag']
-                  },
-                  default_transformations: {
-                    $tag: {{slug}}
-                  }
+                  multiple: true
                 } 
               }
           }
