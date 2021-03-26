@@ -1,8 +1,7 @@
 ---
 template: SinglePost
 title: Ústí nad Orlicí
-tag:
-  ? "{ slug }"
+tag: usti_nad_orlici
 featuredImage: https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_600,q_auto,w_800/v1616784178/usti_nad_orlici/P1040984_dqdk1j.jpg
 date: 2021-03-26
 images:
