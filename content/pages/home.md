@@ -2,7 +2,7 @@
 template: HomePage
 slug: ""
 title: BŘÍZŮV SBOR KAMENIČKY
-featuredImage: https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_2000,q_auto,w_2000/v1616447070/popelka_koncert/vkoncert0019_ydskxe.jpg
+featuredImage: https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616799760/03621127_zo0i3v.jpg
 subtitle: ""
 meta:
   description: This is a meta description.
