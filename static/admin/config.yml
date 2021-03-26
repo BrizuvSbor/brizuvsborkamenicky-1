@@ -53,8 +53,8 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titulek, name: title, widget: string }
-          - label: Obrázek v hlavičce, 
-            name: featuredImage, 
+          - label: Obrázek v hlavičce
+            name: featuredImage
             widget: image
             media_library: {
               config: {
@@ -83,8 +83,8 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'concerts' }
           - { label: Titulek, name: title, widget: string }
-          - label: Obrázek v hlavičce, 
-            name: featuredImage, 
+          - label: Obrázek v hlavičce 
+            name: featuredImage 
             widget: image
             media_library: {
               config: {

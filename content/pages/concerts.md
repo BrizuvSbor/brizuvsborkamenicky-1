@@ -14,6 +14,5 @@ concerts:
     description: Taciti lorem tempor quam vestibulum dis habitasse
 subtitle: null
 title: KONCERTY
-"featuredImage,": https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616797650/low_Koncert_Brizuv_sbor_1_2013_h_fil3b3.jpg
 ---
 Navštivte naše koncerty!
