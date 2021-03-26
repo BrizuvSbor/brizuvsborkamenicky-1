@@ -7,6 +7,7 @@ subtitle: ""
 meta:
   description: This is a meta description.
   title: Břízův sbor Kameničky
+"featuredImage,": https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616799760/03621127_zo0i3v.jpg
 ---
 # O nás
 
