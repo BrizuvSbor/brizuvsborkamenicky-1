@@ -89,13 +89,13 @@ collections: # A list of collections the CMS should be able to edit
             media_library: {
               config: {
                 multiple: false,
-                default_transformations: {
-                  fetch_format: auto,
-                  width: 2000,
-                  height: 2000,
-                  quality: auto,
-                  crop: crop
-                }
+                default_transformations: [ 
+                    fetch_format: auto,
+                    width: 2000,
+                    height: 2000,
+                    quality: auto,
+                    crop: crop
+                ]
               } 
             } 
           - label: 'Koncert'
