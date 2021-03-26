@@ -11,11 +11,11 @@ media_library:
     api_key: 841185415291831
     multiple: false
     max_files: 200
-    tags: ['tag']
+    tagname: 'tag'
     default_transformations:
       - fetch_format: auto
-        width: 2000
-        height: 2000    
+        width: 800
+        height: 600   
         quality: auto
         crop: crop
 
@@ -54,7 +54,21 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titulek, name: title, widget: string }
-          - { label: Obrázek v hlavičce, name: featuredImage, widget: image }
+          - label: Obrázek v hlavičce, 
+            name: featuredImage, 
+            widget: image
+            media_library: {
+              config: {
+                multiple: false,
+                default_transformations: {
+                  fetch_format: auto,
+                  width: 2000,
+                  height: 2000,
+                  quality: auto,
+                  crop: crop
+                }
+              } 
+            } 
           - { label: Podtitulek, name: subtitle, widget: markdown, required: false }
           - { label: Obsah, name: body, widget: markdown }
 
@@ -70,7 +84,21 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'concerts' }
           - { label: Titulek, name: title, widget: string }
-          - { label: Obrázek v hlavičce, name: featuredImage, widget: image }
+          - label: Obrázek v hlavičce, 
+            name: featuredImage, 
+            widget: image
+            media_library: {
+              config: {
+                multiple: false,
+                default_transformations: {
+                  fetch_format: auto,
+                  width: 2000,
+                  height: 2000,
+                  quality: auto,
+                  crop: crop
+                }
+              } 
+            } 
           - label: 'Koncert'
             name: 'concerts'
             widget: 'list'
@@ -124,7 +152,14 @@ collections: # A list of collections the CMS should be able to edit
               widget: image,
               media_library: {
                 config: {
-                  multiple: true
+                  multiple: true,
+                  default_transformations: {
+                    fetch_format: auto,
+                    width: 2000,
+                    height: 2000,
+                    quality: auto,
+                    crop: crop
+                  }
                 } 
               }
           }
