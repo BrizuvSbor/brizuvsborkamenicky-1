@@ -11,7 +11,6 @@ media_library:
     api_key: 841185415291831
     multiple: false
     max_files: 200
-    tagname: 'tag'
     default_transformations:
       - fetch_format: auto
         width: 800
