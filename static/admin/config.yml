@@ -10,6 +10,7 @@ media_library:
     cloud_name: dfhtw7uzk
     api_key: 841185415291831
     multiple: false
+    maxfiles: 200
     tags: ['tag']
     default_transformations:
       - fetch_format: auto
