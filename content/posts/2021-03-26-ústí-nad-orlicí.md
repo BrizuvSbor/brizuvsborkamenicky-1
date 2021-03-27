@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Ústí nad Orlicí - festival duchovní hudby
+title: Ústí nad Orlicí - festival duchovní hudby 2008
 tag: usti_nad_orlici
 featuredImage: https://res.cloudinary.com/dfhtw7uzk/image/upload/c_crop,f_auto,h_600,q_auto,w_800/v1616784178/usti_nad_orlici/P1040984_dqdk1j.jpg
 date: 2021-03-26
@@ -13,4 +13,4 @@ images:
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616784171/usti_nad_orlici/P1040983_z8kmaz.jpg
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616784169/usti_nad_orlici/P1040981_d2jcmi.jpg
 ---
-Fotografie z festivalu duchovní hudby sv. Cecílie.
+Fotografie z festivalu duchovní hudby sv. Cecílie v Ústí nad Orlicí.
