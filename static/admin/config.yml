@@ -14,7 +14,7 @@ media_library:
     default_transformations:
       - fetch_format: auto
         width: 800
-        height: 600   
+        height: 800   
         quality: auto
         crop: crop
 
@@ -124,6 +124,19 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             fields:
               - { label: 'Odkaz', name: 'link', widget: 'string' }
+  
+      - file: 'content/pages/radovan-lukavsky.md'
+        label: 'Radovan Lukavský'
+        name: 'radovan-lukavsky'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: DefaultPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'radovan-lukavsky' }
+          - { label: Obsah, name: body, widget: markdown }
   
   - name: posts
     label: Naše fotky
