@@ -90,12 +90,12 @@ class Image extends React.Component {
       let urlArray = src.split("/upload");
       let configArray = urlArray[1].split("/");
       secSet = this.imageSizes.map(size => {
-        let newConfigParams = `c_fill,f_auto,q_auto,h_${size},w_${size}`;
+        let newConfigParams = `c_crop,f_auto,q_auto,h_${size},w_${size}`;
         return this.getResultUrl(urlArray, configArray, newConfigParams) + " " + size + "w";
       });
-      let newConfigParams = `c_fill,f_auto,q_auto,w_${this.getResolutionString(resolutions)}`;
+      let newConfigParams = `c_crop,f_auto,q_auto,w_${this.getResolutionString(resolutions)}`;
       fullSrc = this.getResultUrl(urlArray, configArray, newConfigParams);
-      newConfigParams = `c_fill,f_auto,q_auto,w_10`;
+      newConfigParams = `c_crop,f_auto,q_auto,w_10`;
       smallSrc = this.getResultUrl(urlArray, configArray, newConfigParams);
     }
 
