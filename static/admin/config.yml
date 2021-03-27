@@ -137,7 +137,33 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'radovan-lukavsky' }
           - { label: Obsah, name: body, widget: markdown }
+
+      - file: 'content/pages/popelka-nazaretska.md'
+        label: 'Popelka Nazaretská'
+        name: 'popelka-nazaretska'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: PopelkaPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'popelka-nazaretska' }
+          - { label: Obsah, name: body, widget: markdown }
   
+      - file: 'content/pages/vaclav-renc.md'
+        label: 'Václav Renč'
+        name: 'vaclav-renc'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: PopelkaPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'vaclav-renc' }
+          - { label: Obsah, name: body, widget: markdown }
+
   - name: posts
     label: Naše fotky
     editor:
