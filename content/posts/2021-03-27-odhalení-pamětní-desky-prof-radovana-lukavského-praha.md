@@ -40,5 +40,10 @@ images:
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783702/odhaleni_desky/IMG_0204_eiqkz5.jpg
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783702/odhaleni_desky/IMG_0235_eqqesb.jpg
       - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783702/odhaleni_desky/IMG_0185_mgwwya.jpg
+      - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783702/odhaleni_desky/IMG_0230_akuri6.jpg
+      - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783702/odhaleni_desky/IMG_0231_vdjfc4.jpg
+      - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783701/odhaleni_desky/IMG_0184_c8iz0n.jpg
+      - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783701/odhaleni_desky/IMG_0226_pgbopm.jpg
+      - https://res.cloudinary.com/dfhtw7uzk/image/upload/f_auto/v1616783701/odhaleni_desky/IMG_0183_ebkjf8.jpg
 ---
 Fotografie z odhalování pamětní desky profesora Radovana Lukavského v Praze.
