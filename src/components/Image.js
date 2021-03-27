@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Observer from './Observer'
 
 import './Image.css'
-import { result } from 'lodash'
 
 class Image extends React.Component {
   constructor() {
@@ -78,11 +77,6 @@ class Image extends React.Component {
       fullImage = !isCloudinary || !lazy
 
     /* create source set for images */
-   /* if (isUploadcare) {
-      secSet = this.imageSizes.map(size => {
-        return `${src}-/progressive/yes/-/format/auto/-/preview/${size}x${size}/-/quality/lightest/${size}.jpg ${size}w`
-      })
-    };*/
     fullSrc = src;
     smallSrc = src;
 
