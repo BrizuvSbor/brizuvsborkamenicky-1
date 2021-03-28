@@ -62,7 +62,6 @@ class Form extends React.Component {
           className="Form"
           name={name}
           data-netlify="true"
-          data-netlify-recaptcha="true"
           method="POST"
         >
           <input type="hidden" name="form-name" value={name} />
@@ -99,7 +98,6 @@ class Form extends React.Component {
             />
             <span>Vaše zpráva</span>
           </label>
-          <div data-netlify-recaptcha="true"></div>
           <button
             className="Button Form--SubmitButton"
             type="submit"
