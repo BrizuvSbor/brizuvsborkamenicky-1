@@ -65,6 +65,7 @@ class Form extends React.Component {
           data-netlify-recaptcha="true"
           method="POST"
         >
+          <input type="hidden" name="form-name" value={name} />
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
           )}
@@ -99,13 +100,12 @@ class Form extends React.Component {
             <span>Vaše zpráva</span>
           </label>
           <div data-netlify-recaptcha="true"></div>
-          <input type="hidden" name="form-name" value={name} />
-          <input
+          <button
             className="Button Form--SubmitButton"
             type="submit"
-            value="Odeslat"
-            disabled={this.state.disabled}
-          />
+          >
+          Odeslat
+          </button>
         </form>
       </Fragment>
     )
