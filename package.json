@@ -38,7 +38,6 @@
     "netlify-cms-app": "^2.9.7",
     "netlify-cms-media-library-cloudinary": "^1.3.10",
     "netlify-cms-media-library-uploadcare": "^0.5.5",
-    "node-sass": "^4.13.1",
     "postcss-preset-env": "^6.7.0",
     "probe-image-size": "^7.0.1",
     "prop-types": "^15.7.2",
@@ -66,7 +65,8 @@
   "devDependencies": {
     "@types/image-size": "^0.8.0",
     "del-cli": "^3.0.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "sass": "^1.101.0"
   },
   "browser": {
     "fs": false
